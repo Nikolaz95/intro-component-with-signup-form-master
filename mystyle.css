@@ -1,0 +1,156 @@
+
+
+ *{
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/bg-intro-desktop.png);
+    background-repeat: repeat;
+    background-size: contain;
+    background-color: hsl(0, 100%, 74%);
+}
+
+.container {
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.section-one{
+    width: 600px;
+}
+
+
+.section-two, .register{
+    width: 500px;
+}
+
+.title, .text {
+    color: hsl(0, 0%, 100%);
+}
+
+.register {
+    margin-bottom: 25px;
+    padding: 18px 0;
+    text-align: center;
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.form {
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.input {
+    padding: 15px 0 15px 20px;
+    width: 400px;
+    padding: 15px 0 15px 20px;
+    display: block;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.form-group{
+    height: 80px;
+    position: relative;
+}
+
+.icon-error {
+    right: 25px;
+    top: 10px;
+
+}
+ 
+
+/* ovaj kod je da sakrijemo sliku eror */
+.icon-error, .alert-msg{
+    /* display: none; */
+    position: absolute;
+}
+
+
+/* ovaj kod je za alarm kada upisemo netocno u formu */
+ .alert-msg{
+    right: 10px;
+    top: 55px;
+    font-size: 0.8rem;
+    color: rgb(255, 0, 0);
+    font-weight: 600;
+    font-style: italic;
+} 
+
+
+
+/* ne znam zasto je  */
+
+/* .form-group.error .icon-error, .form-group.error .alert-msg {
+    display: block;
+} */
+
+
+/* ne znam zasto je  */
+
+/* .form-group.error .input, .form-group.error .input:focus {
+	border: 2px solid #f54242;
+} */
+
+
+/* ne znam zasto je  */
+
+/* .form.error .input::placeholder{
+    color:transparent;
+} */
+
+.btn {
+    padding: 20px 0 20px 0;
+    width: 420px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: rgb(55, 182, 61);
+}
+
+
+.btn:hover {
+    background-color: rgb(76, 248, 84);
+}
+
+.btn:active {
+    background-color: rgb(15, 75, 18);
+    position:relative;
+    top: 1px;
+}
+
+.form-footer {
+    margin-top: 20px;
+    width: 420px;
+}
+
+.link-terms {
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+
+.link-terms:hover{
+    text-decoration:underline;
+}
+
+.footer {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
